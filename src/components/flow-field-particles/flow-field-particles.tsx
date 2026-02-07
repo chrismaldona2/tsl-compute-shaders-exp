@@ -23,7 +23,7 @@ import { Vector3, Raycaster } from "three";
 const particleCount = 250000;
 
 export default function FlowFieldParticles() {
-  const gltf = useGLTF("./scene.glb", "/draco/");
+  const gltf = useGLTF("/scene.glb", "/draco/");
 
   const particlesData = useMemo(
     () => bakeParticles(gltf.nodes, particleCount),

@@ -13,7 +13,6 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: "/tsl-compute-shaders-exp/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
